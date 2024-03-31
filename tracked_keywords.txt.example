@@ -1,0 +1,96 @@
+# Add your own keywords here, following the format:
+#
+# keyword:tag
+#
+# or simply:
+#
+# keyword
+#
+# Keywords (left, words that are searched for in the csv file) are lower/uppercase agnostic, so all of the following will be tagged with the tag "example" unless specified otherwise:
+#
+# example
+# Example
+# EXAMPLE
+# eXaMpLe
+#
+# So in cases like these, only one entry will capture all of these variations and save them as the tag 'example'.
+#
+# You can specify case by setting it explictly:
+#
+# example:EXAMPLE
+#
+# Which will search for any occurrence of 'example', 'Example', 'EXAMPLE', 'exAMPle', etc and write the tag 'EXAMPLE' as set on the right to the YAML frontmatter metadata.
+#
+# You can repeat entries on the left (searched keywords) and on the right as needed, so for instance:
+#
+# oak:trees
+# birch:trees
+# maple:trees
+# tree:trees
+# trees
+#
+# ... will search for the words oak, birch, maple, tree, and trees. When found any or all of these, will write a single tag 'trees'.
+#
+# Additionally/alternatively, you can do:
+#
+# oak:wood
+# oak:trees
+# oak:materials
+#
+# ... which will search just for the word 'oak', and writes three tags when found: wood, trees, and materials. This will not add the tag 'oak'.
+#
+# Single words without a ':tag' part on the right will simply save that word as a (lowercase) tag:
+#
+# John
+# MARY
+# peter
+#
+# Will search and tag with 'john', 'mary', and 'peter'. If instead you'd like to capitalize these, you'll have to make that explicit:
+#
+# John:John
+# MARY:Mary
+# peter:Peter
+#
+# These would still ignore upper/lowercase when searching, so will find John, john, JOHN, etc.
+
+# Examples (remove these for your own use):
+
+# Keywords related to family members
+family
+Brother
+sister
+Mom
+Dad
+Harry
+Bertrand
+Suzie
+mom:family
+dad:family
+sister:family
+brother:family
+Harry:family
+Harry:brother
+Bertrand:family
+Bertrand:brother
+Suzie:family
+Suzie:sister
+
+# Keywords related to work
+work
+ACME:work
+Colleage:work
+Colleages:work
+office:work
+meeting:work
+project:work
+
+# Keywords related to health
+health
+doctor:health
+medicine:health
+exercise:health
+cardiologist:health
+Cardiologist:heart
+Heart:health
+Heart
+
