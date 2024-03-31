@@ -11,6 +11,7 @@
 > cd daylio-to-markdown
 > pip install -r requirements.txt
 > mv .env.ready_to_go .env
+> touch tracked_keywords.txt
 > ```
 >
 > Then install python if you haven't already, save your Daylio CSV export to ./daylio-exports, and run:
