@@ -2,7 +2,7 @@
 **With automated tagging**
 *(Daylio to Obsidian)*
 
-> [!TIP] TL;DR
+> [!TIP]
 >
 > If you just want to use this right away with default settings, then do this:
 >
