@@ -60,8 +60,11 @@ modified: ****
 ```
 
 \* = I'm using 24h time notation, so e.g. 21:30, *not* 9:30pm. To change this, you'd have to edit the script at the moment.
+
 \*\* = Example of this format: `2024-03-31T17:21:00+01:00`. Daylio doesn't record seconds, nor timezone. I use both of these in my regular Obsidian notes, however (and other plugins there expect this formatting), so currently the part of the 'created' YAML key that says ':00+01:00' is hardcoded into the script, as is the 'T' between date and time. The '+01:00' represents (my) timezone. These should be fairly easy to change in the script if you prefer, though. I might change all of this into configurable settings at some point.
+
 \*\*\* = The word/string that was selected in Daylio to indicate the 'mood' for this entry. For example, by default 🙂 is 'good'. This can be configured in Daylio though, I believe.
+
 \*\*\*\* = 'aliases' and 'modified' are left blank. I personally use these when working on notes further, after export. You can easily remove / change them in the script if you prefer.
 
 ## Features
